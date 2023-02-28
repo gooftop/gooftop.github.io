@@ -1,0 +1,67 @@
+body{
+    margin:0;
+    padding:0;
+    display: grid;
+    place-items: center;
+}
+
+.gradient{
+    background-color:aliceblue;
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient(50deg, #74b6d7,#956dba, #af689f);
+    background-size: 500% 500%;
+    animation: bg-gradient 10s infinite linear;
+}
+
+h1{
+    
+    text-align:center;
+    padding-top: 25%;
+    color:white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn{
+    background:transparent;
+    color:rgb(255, 254, 254);
+    cursor:pointer;
+    border: 10;
+    border-style:solid;
+    border-color:rgb(255, 255, 255);
+    border-radius: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+    font-size: 16px;
+    text-align: center;
+
+}
+.myBtn{
+    text-align: center;
+}
+.btn:hover{
+    background: linear-gradient(90deg, #ff0000,#ffb547, #f0fc48, #51d74a,#5261ff,#b452ff,#ff0000,#ffb547);
+    background-size: 500% 500%;
+    animation: bg-rbgradient 2s infinite linear;
+}
+
+@keyframes bg-gradient{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 100% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+
+@keyframes bg-rbgradient{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 100% 0;
+    } 
+}
